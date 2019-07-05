@@ -1,0 +1,25 @@
+{
+  "name": "ez-elements",
+  "private": true,
+  "scripts": {
+    "build": "lerna run build",
+    "watch": "lerna run --parallel watch",
+    "test": "lerna run build && lerna run test",
+    "test:watch": "lerna run --parallel test:watch",
+    "format": "prettier --write --single-quote \"*/src/**/*.ts\"",
+    "postinstall": "npm run bootstrap",
+    "bootstrap": "lerna bootstrap",
+    "postbootstrap": "lerna run postbootstrap",
+    "clean": "lerna clean --yes --private && lerna run clean"
+  },
+  "author": "Marcus Longmuir",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "lerna": "^3.16.4",
+    "prettier": "1.18.2",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.6.2"
+  }
+}

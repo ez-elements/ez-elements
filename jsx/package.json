@@ -1,0 +1,20 @@
+{
+  "name": "@ez-elements/jsx",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc --build ./tsconfig.json",
+    "watch": "npm run build -- --watch",
+    "test": "../node_modules/.bin/jest ./src",
+    "test:watch": "npm run test -- --watch"
+  },
+  "author": "Marcus Longmuir",
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "@ez-elements/core": "*"
+  },
+  "devDependencies": {
+    "@ez-elements/core": "*"
+  }
+}

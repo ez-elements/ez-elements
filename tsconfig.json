@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "declaration": true,
+    "noUnusedLocals": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "strictNullChecks": true,
+    "noFallthroughCasesInSwitch": true,
+    "lib": [
+      "dom",
+      "es5",
+      "es6",
+      "es2016.array.include"
+    ]
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

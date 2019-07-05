@@ -1,0 +1,10 @@
+{
+  "packages": [
+    "core",
+    "inputs",
+    "jsx",
+    "shadow",
+    "examples"
+  ],
+  "version": "0.1.0"
+}

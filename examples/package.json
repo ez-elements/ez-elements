@@ -1,0 +1,19 @@
+{
+  "name": "@ez-elements/examples",
+  "private": true,
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "author": "Marcus Longmuir",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@ez-elements/core": "*",
+    "@ez-elements/inputs": "*",
+    "@ez-elements/shadow": "*",
+    "@ez-elements/jsx": "*"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "typescript": "^3.6.2"
+  }
+}

@@ -1,0 +1,10 @@
+.DS_Store
+node_modules
+/.idea
+examples/.cache
+examples/dist
+core/lib/
+inputs/lib/
+jsx/lib/
+shadow/lib/
+coverage/
