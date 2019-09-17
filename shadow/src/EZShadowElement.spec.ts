@@ -1,3 +1,6 @@
+// Register a mock for the customElements window property
+require('document-register-element');
+
 import { EZShadowElement } from './EZShadowElement';
 
 describe('EZShadowElement', () => {
