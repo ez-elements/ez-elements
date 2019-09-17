@@ -48,6 +48,13 @@ interface InternalShadowClass {
 export const InternalShadow = (InternalShadowImpl as unknown) as InternalShadowClass;
 export type InternalShadow = IInternalShadow;
 
-// A tag is required for a custom HTMLElement.
-// The internal shadow element will be visible as 'ez-shadow' in the DOM
-customElements.define('ez-shadow', InternalShadow);
+const global = Function('return this')();
+
+// A tag is required for a custom HTMLElement. If the element is not registered then the instance will not be
+// constructable. If the customElements global is not defined then only throw the error if a construction is attempted
+export let didRegisterCustomElement = false;
+if (global.customElements) {
+  // The internal shadow element will be visible as 'ez-shadow' in the DOM
+  global.customElements.define('ez-shadow', InternalShadow);
+  didRegisterCustomElement = true;
+}
