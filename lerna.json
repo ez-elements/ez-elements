@@ -4,7 +4,8 @@
     "inputs",
     "jsx",
     "shadow",
-    "examples"
+    "examples",
+    "ez-elements"
   ],
   "version": "0.1.0"
 }

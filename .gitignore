@@ -7,4 +7,5 @@ core/lib/
 inputs/lib/
 jsx/lib/
 shadow/lib/
+ez-elements/lib/
 coverage/

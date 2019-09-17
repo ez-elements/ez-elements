@@ -1,0 +1,21 @@
+{
+  "name": "ez-elements",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc --build ./tsconfig.json",
+    "watch": "npm run build -- --watch",
+    "test": "../node_modules/.bin/jest ./src --coverage",
+    "test:watch": "npm run test -- --watch",
+    "coveralls": "../node_modules/.bin/jest ./src --coverage --coverageReporters=text-lcov"
+  },
+  "author": "Marcus Longmuir",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@ez-elements/core": "*",
+    "@ez-elements/inputs": "*",
+    "@ez-elements/jsx": "*",
+    "@ez-elements/shadow": "*"
+  }
+}
