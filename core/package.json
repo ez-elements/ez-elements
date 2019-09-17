@@ -6,8 +6,9 @@
   "scripts": {
     "build": "tsc --build ./tsconfig.json",
     "watch": "npm run build -- --watch",
-    "test": "../node_modules/.bin/jest ./src",
-    "test:watch": "npm run test -- --watch"
+    "test": "../node_modules/.bin/jest ./src --coverage",
+    "test:watch": "npm run test -- --watch",
+    "coveralls": "../node_modules/.bin/jest ./src --coverage --coverageReporters=text-lcov | ../node_modules/.bin/coveralls"
   },
   "author": "Marcus Longmuir",
   "license": "Apache-2.0"
