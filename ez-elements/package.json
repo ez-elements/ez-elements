@@ -13,9 +13,9 @@
   "author": "Marcus Longmuir",
   "license": "Apache-2.0",
   "dependencies": {
-    "@ez-elements/core": "*",
-    "@ez-elements/inputs": "*",
-    "@ez-elements/jsx": "*",
-    "@ez-elements/shadow": "*"
+    "@ez-elements/core": "^0.0.1",
+    "@ez-elements/inputs": "^0.0.1",
+    "@ez-elements/jsx": "^0.0.1",
+    "@ez-elements/shadow": "^0.0.1"
   }
 }

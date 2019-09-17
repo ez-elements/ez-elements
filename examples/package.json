@@ -7,10 +7,10 @@
   "author": "Marcus Longmuir",
   "license": "Apache-2.0",
   "dependencies": {
-    "@ez-elements/core": "*",
-    "@ez-elements/inputs": "*",
-    "@ez-elements/shadow": "*",
-    "@ez-elements/jsx": "*"
+    "@ez-elements/core": "^0.0.1",
+    "@ez-elements/inputs": "^0.0.1",
+    "@ez-elements/shadow": "^0.0.1",
+    "@ez-elements/jsx": "^0.0.1"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.3",

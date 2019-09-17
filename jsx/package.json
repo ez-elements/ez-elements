@@ -13,9 +13,9 @@
   "author": "Marcus Longmuir",
   "license": "Apache-2.0",
   "peerDependencies": {
-    "@ez-elements/core": "*"
+    "@ez-elements/core": "^0.0.1"
   },
   "devDependencies": {
-    "@ez-elements/core": "*"
+    "@ez-elements/core": "^0.0.1"
   }
 }
