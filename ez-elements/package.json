@@ -17,5 +17,6 @@
     "@ez-elements/inputs": "^0.0.1",
     "@ez-elements/jsx": "^0.0.1",
     "@ez-elements/shadow": "^0.0.1"
-  }
+  },
+  "gitHead": "65f90fac77403cb79d7f33656daa500ae0eb66b4"
 }

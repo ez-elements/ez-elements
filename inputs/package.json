@@ -10,6 +10,9 @@
     "test:watch": "npm run test -- --watch",
     "coveralls": "../node_modules/.bin/jest ./src --coverage --coverageReporters=text-lcov"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "author": "Marcus Longmuir",
   "license": "Apache-2.0",
   "peerDependencies": {
@@ -17,5 +20,6 @@
   },
   "devDependencies": {
     "@ez-elements/core": "^0.0.1"
-  }
+  },
+  "gitHead": "65f90fac77403cb79d7f33656daa500ae0eb66b4"
 }
