@@ -1,5 +1,5 @@
-import { EZDiv } from "./EZDiv";
-import { EZElement } from "./EZElement";
+import { EZDiv } from './EZDiv';
+import { EZElement } from './EZElement';
 
 describe('EZDiv', () => {
   it('should construct', () => {

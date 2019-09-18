@@ -1,5 +1,5 @@
-import { EZSpan } from "./EZSpan";
-import { EZElement } from "./EZElement";
+import { EZSpan } from './EZSpan';
+import { EZElement } from './EZElement';
 
 describe('EZSpan', () => {
   it('should construct', () => {
