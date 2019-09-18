@@ -23,20 +23,29 @@ document.body.appendChild(someDiv);
 Becomes:
 ```ts
 let spanOne, spanTwo; // variables not required, but you can assign them inside the append
-const someDiv = ez('div', ['some-div']).append(
-  spanOne = ez('span', ['some-span']).setTextContent('Hello '),
-  spanTwo = ez('span', ['some-span']).setTextContent('World'),
+const someDiv = ez('div', 'some-div').append(
+  spanOne = ez('span', 'some-span').setTextContent('Hello '),
+  spanTwo = ez('span', 'some-span').setTextContent('World'),
 ).appendTo(document.body);
 ```
 
 ### How it works <sup><sub><sub><sup>(and why you should care)</sup></sub></sub></sup>
 
-The `ez` function takes a HTML element tag name (or a HTMLElement or an EZElement instance) and then an optional list of classes and returns an `EZElement` instance.
+The `ez` function has the following interface:
+* First argument is one of:
+    * A HTML element tag name
+    * A HTMLElement
+    * An EZElement instance
+ * Optional second argument is one of: 
+    * a single class name string
+    * array of class names as strings
+    * an object of class name to active bool
+* Returns an `EZElement` instance.
 
 ```ts
 function ez<T extends keyof HTMLElementTagNameMap>(
     arg: T | HTMLElementTagNameMap[T] | EZElement<T>, 
-    classes?: ClassArg,
+    classes?: string | Array<string> | { [key: string]: boolean },
 ): EZElement<T>
 ```
 
