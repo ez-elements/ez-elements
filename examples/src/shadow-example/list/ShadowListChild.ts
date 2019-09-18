@@ -1,7 +1,5 @@
 import { ListChild } from './FilterableStaticList';
-import { EZShadowElement } from '@ez-elements/shadow';
-import { EZSpan } from '@ez-elements/core';
-import { extractStyleContents } from '@ez-elements/shadow';
+import { extractStyleContents, EZShadowElement, EZSpan } from 'ez-elements';
 
 const css = extractStyleContents(`<style>
   :host {

@@ -1,5 +1,4 @@
-import { ez, EZDiv } from '@ez-elements/core';
-import { extractStyleContents, EZShadowElement } from '@ez-elements/shadow';
+import { extractStyleContents, ez, EZDiv, EZShadowElement } from 'ez-elements';
 
 const enabledClassName = 'enabled';
 const style = extractStyleContents(`<style>

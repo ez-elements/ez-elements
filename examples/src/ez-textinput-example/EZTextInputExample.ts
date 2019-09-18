@@ -1,5 +1,6 @@
-import { ez, EZDiv, EZElement } from '@ez-elements/core';
-import { EZTextInput } from '@ez-elements/inputs';
+import { ez, EZDiv, EZElement, EZTextInput } from 'ez-elements';
+import { SourceCode } from "../shared/SourceCode";
+import { readFileSync } from "fs";
 
 export function EZTextInputExample(holder: EZDiv) {
   let textInput: EZTextInput;
@@ -25,6 +26,10 @@ export function EZTextInputExample(holder: EZDiv) {
       .setTextContent('Set to "Bar" without change callback')
       .onClick(() => {
         textInput.setValue('Bar', false);
-      })
+      }),
+
+    SourceCode({
+      'EZTextInputExample.ts': readFileSync(__dirname + '/' + 'EZTextInputExample.ts', 'utf-8'),
+    }),
   );
 }

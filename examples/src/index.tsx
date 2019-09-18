@@ -1,4 +1,4 @@
-import { ez, EZDiv } from "@ez-elements/core";
+import { ez, EZDiv } from "ez-elements";
 import { ShadowExample } from "./shadow-example/ShadowExample";
 import { ButtonExample } from "./button-example/ButtonExample";
 import { JSXExample } from "./jsx-example/JSXExample";

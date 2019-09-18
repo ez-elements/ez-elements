@@ -1,6 +1,7 @@
-import { ez, EZDiv } from '@ez-elements/core';
-import { EZButton } from '@ez-elements/inputs';
+import { ez, EZButton, EZDiv } from 'ez-elements';
 import { StatusElement } from '../shared/StatusElement';
+import { SourceCode } from "../shared/SourceCode";
+import { readFileSync } from "fs";
 
 export function EZButtonExample(holder: EZDiv) {
   let statusElement: StatusElement;
@@ -25,6 +26,10 @@ export function EZButtonExample(holder: EZDiv) {
     }).append(
       ez('div').setTextContent('🔴'),
       ez('div').setTextContent('Disable')
-    )
+    ),
+
+    SourceCode({
+      'EZButtonExample.ts': readFileSync(__dirname + '/' + 'EZButtonExample.ts', 'utf-8'),
+    }),
   );
 }

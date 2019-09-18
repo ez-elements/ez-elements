@@ -1,5 +1,4 @@
-import { EZButton } from '@ez-elements/inputs';
-import { ez, EZElement } from '@ez-elements/core';
+import { ez, EZButton, EZElement } from 'ez-elements';
 
 type ToggleIconTextButtonProps = {
   activeIcon: string;

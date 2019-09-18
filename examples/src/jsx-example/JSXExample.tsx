@@ -1,5 +1,7 @@
-import * as EZJSX from '@ez-elements/jsx';
-import { AnyEZElement, EZDiv, EZElement } from "@ez-elements/core";
+import * as EZJSX from 'ez-elements';
+import { AnyEZElement, EZDiv, EZElement } from 'ez-elements';
+import { SourceCode } from "../shared/SourceCode";
+import { readFileSync } from "fs";
 
 const React = EZJSX.JSX;
 
@@ -31,6 +33,12 @@ export function JSXExample(holder: EZDiv) {
   simpleDiv.append(" - simpleDiv.modified");
   nestedDiv.append(' - nestedDiv.modified');
   someComplex.addStyles({color: 'indigo'}).append(' - SomeComplex.modified');
+
+  holder.append(
+    SourceCode({
+      'JSXExample.tsx': readFileSync(__dirname + '/' + 'JSXExample.tsx', 'utf-8'),
+    }),
+  )
 }
 
 class SomeComplex extends EZDiv {

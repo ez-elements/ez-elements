@@ -1,7 +1,8 @@
-import { EZDiv } from '@ez-elements/core';
+import { ez, EZDiv } from 'ez-elements';
 import { ToggleIconTextButton } from './ToggleIconTextButton';
 import { StatusElement } from '../shared/StatusElement';
-import { ez } from '@ez-elements/core';
+import { SourceCode } from "../shared/SourceCode";
+import { readFileSync } from "fs";
 
 export function EZButtonSubclassExample(holder: EZDiv) {
   const statusElement = new StatusElement(false);
@@ -30,6 +31,11 @@ export function EZButtonSubclassExample(holder: EZDiv) {
         }
       },
       false
-    )
+    ),
+
+    SourceCode({
+      'EZButtonSubclassExample.ts': readFileSync(__dirname + '/' + 'EZButtonSubclassExample.ts', 'utf-8'),
+      'ToggleIconTextButton.ts': readFileSync(__dirname + '/' + 'ToggleIconTextButton.ts', 'utf-8'),
+    }),
   );
 }

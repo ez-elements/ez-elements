@@ -1,5 +1,7 @@
-import { ez, EZDiv } from '@ez-elements/core';
+import { ez, EZDiv } from 'ez-elements';
 import { StatusElement } from '../shared/StatusElement';
+import { SourceCode } from "../shared/SourceCode";
+import { readFileSync } from "fs";
 
 export function ButtonExample(holder: EZDiv) {
   let statusElement: StatusElement;
@@ -23,6 +25,10 @@ export function ButtonExample(holder: EZDiv) {
       .setTextContent('Disable')
       .onClick(() => {
         statusElement.disable();
-      })
+      }),
+
+    SourceCode({
+      'ButtonExample.ts': readFileSync(__dirname + '/' + 'ButtonExample.ts', 'utf-8'),
+    }),
   );
 }

@@ -1,6 +1,4 @@
-import { AnyEZElement, ez, EZDiv } from '@ez-elements/core';
-import { EZButton, EZTextInput } from '@ez-elements/inputs';
-import { extractStyleContents, EZShadowElement } from '@ez-elements/shadow';
+import { AnyEZElement, extractStyleContents, ez, EZButton, EZDiv, EZShadowElement, EZTextInput } from 'ez-elements';
 
 const textInputClassName = 'text-input';
 const holderClassName = 'holder';
