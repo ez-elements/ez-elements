@@ -1,4 +1,12 @@
-import { AnyEZElement, extractStyleContents, ez, EZButton, EZDiv, EZShadowElement, EZTextInput } from 'ez-elements';
+import {
+  AnyEZElement,
+  extractStyleContents,
+  ez,
+  EZButton,
+  EZDiv,
+  EZShadowElement,
+  EZTextInput
+} from 'ez-elements';
 
 const textInputClassName = 'text-input';
 const holderClassName = 'holder';
@@ -35,6 +43,10 @@ export class FilterableStaticList extends EZShadowElement<'div'> {
     super('div');
 
     this.setShadowStyle(css).append(
+      (this.input = new EZTextInput(value => {
+        this.applyFilter(value);
+      }).addClass(textInputClassName)),
+
       ez('div').append(
         new EZButton(() => {
           this.input.setValue('1');
@@ -43,10 +55,6 @@ export class FilterableStaticList extends EZShadowElement<'div'> {
           this.input.setValue('2');
         }).setTextContent('Set to "2"')
       ),
-
-      (this.input = new EZTextInput(value => {
-        this.applyFilter(value);
-      }).addClass(textInputClassName)),
 
       (this.holder = new EZDiv().addClass(holderClassName))
     );

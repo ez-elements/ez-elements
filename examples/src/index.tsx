@@ -1,20 +1,20 @@
 import { ez, EZDiv } from "ez-elements";
-import { ShadowExample } from "./shadow-example/ShadowExample";
-import { ButtonExample } from "./button-example/ButtonExample";
-import { JSXExample } from "./jsx-example/JSXExample";
-import { EZButtonExample } from "./ez-button-example/EZButtonExample";
-import { EZButtonSubclassExample } from "./ez-button-subclass-example/EZButtonSubclassExample";
-import { EZTextInputExample } from "./ez-textinput-example/EZTextInputExample";
-import { BasicEZElementsExample } from "./basic-ezelements/BasicEZElementsExample";
+import { ShadowExampleWrapper } from "./shadow-example/ShadowExampleWrapper";
+import { ButtonExampleWrapper } from "./button-example/ButtonExampleWrapper";
+import { JSXExampleWrapper } from "./jsx-example/JSXExampleWrapper";
+import { EZButtonExampleWrapper } from "./ez-button-example/EZButtonExampleWrapper";
+import { EZButtonSubclassExampleWrapper } from "./ez-button-subclass-example/EZButtonSubclassExampleWrapper";
+import { EZTextInputExampleWrapper } from "./ez-textinput-example/EZTextInputExampleWrapper";
+import { BasicEZElementsExampleWrapper } from "./basic-ezelements/BasicEZElementsExampleWrapper";
 
 const examples: { [key: string]: (holder: EZDiv) => void } = {
-  'Basic EZElements': BasicEZElementsExample,
-  'Button': ButtonExample,
-  'EZButton': EZButtonExample,
-  'EZButton Subclass': EZButtonSubclassExample,
-  'EZTextInput': EZTextInputExample,
-  'Shadow': ShadowExample,
-  'JSX': JSXExample,
+  'Basic EZElements': BasicEZElementsExampleWrapper,
+  'Button': ButtonExampleWrapper,
+  'EZButton': EZButtonExampleWrapper,
+  'EZButton Subclass': EZButtonSubclassExampleWrapper,
+  'EZTextInput': EZTextInputExampleWrapper,
+  'Shadow': ShadowExampleWrapper,
+  'JSX': JSXExampleWrapper,
 };
 
 let buttonsHolder = ez('div').addStyles({

@@ -1,21 +1,13 @@
-import { ez, EZDiv } from 'ez-elements';
+import { ez } from 'ez-elements';
 import { ToggleIconTextButton } from './ToggleIconTextButton';
 import { StatusElement } from '../shared/StatusElement';
-import { SourceCode } from "../shared/SourceCode";
-import { readFileSync } from "fs";
 
-export function EZButtonSubclassExample(holder: EZDiv) {
+export function EZButtonSubclassExample() {
   const statusElement = new StatusElement(false);
 
-  holder.append(
-    ez('h3').setTextContent('EZButton Subclass'),
-    ez('p').append(
-      'Source shows how to extend ',
-      ez('code').append('EZButton'),
-      ' to create more complex buttons.'
-    ),
-
+  return ez('div').append(
     statusElement,
+
     new ToggleIconTextButton(
       {
         activeIcon: '👍',
@@ -31,11 +23,6 @@ export function EZButtonSubclassExample(holder: EZDiv) {
         }
       },
       false
-    ),
-
-    SourceCode({
-      'EZButtonSubclassExample.ts': readFileSync(__dirname + '/' + 'EZButtonSubclassExample.ts', 'utf-8'),
-      'ToggleIconTextButton.ts': readFileSync(__dirname + '/' + 'ToggleIconTextButton.ts', 'utf-8'),
-    }),
+    )
   );
 }

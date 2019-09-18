@@ -1,24 +1,15 @@
-import { SourceCode } from "../shared/SourceCode";
-import { readFileSync } from 'fs';
-
 import { ez, EZDiv, EZElement, EZSpan } from 'ez-elements';
 
-export function BasicEZElementsExample(holder: EZDiv) {
-  holder.append(
-    ez('h3').setTextContent('Basic EZElements'),
-    ez('p').append(
-      'Source shows how to create elements using ',
-      ez('code').append('new EZElement(tag)'), ', ',
-      ez('code').append('ez(tag)'), ', ',
-      ez('code').append('new EZDiv()'), ', and ',
-      ez('code').append('new EZSpan()')
-    ),
-
+export function BasicEZElementsExample() {
+  return ez('div').append(
     new EZElement('div').setTextContent(
       'Constructed using new EZElement("div")'
     ),
+
     ez('div').setTextContent('Constructed using ez("div")'),
+
     new EZDiv().setTextContent('Constructed using new EZDiv()'),
+
     new EZSpan().setTextContent('Constructed using new EZSpan()'),
 
     ez('p').setTextContent(
@@ -38,10 +29,6 @@ export function BasicEZElementsExample(holder: EZDiv) {
           return e;
         })()
       )
-    ),
-
-    SourceCode({
-      'BasicEZElementsExample.ts': readFileSync(__dirname + '/' + 'BasicEZElementsExample.ts', 'utf-8'),
-    }),
+    )
   );
 }

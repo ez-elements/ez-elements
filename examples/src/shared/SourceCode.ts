@@ -1,4 +1,4 @@
-import { ez, EZDiv } from "ez-elements";
+import { ez, EZDiv } from 'ez-elements';
 
 // include the file in the code-prettyify package that adds the functions
 // to the window so that they can be invoked after pre tags are added
@@ -23,28 +23,28 @@ export function SourceCode(files: { [key: string]: string }) {
         cursor: 'pointer',
         padding: '5px',
         color: inactiveTabColor,
-        backgroundColor: inactiveTabBackgroundColor,
+        backgroundColor: inactiveTabBackgroundColor
       })
       .setTextContent(fileName)
       .onClick(() => {
         if (currentTab) {
           currentTab.addStyles({
             color: inactiveTabColor,
-            backgroundColor: inactiveTabBackgroundColor,
+            backgroundColor: inactiveTabBackgroundColor
           });
         }
         currentTab = tab;
         tab.addStyles({
           color: activeTabColor,
-          backgroundColor: activeTabBackgroundColor,
+          backgroundColor: activeTabBackgroundColor
         });
         contentHolder.applyChildren([
           ez('pre', 'prettyprint')
             .setTextContent(contents)
             .addStyles({
               margin: '0',
-              border: '1px solid black',
-            }),
+              border: '1px solid black'
+            })
         ]);
         prettyPrintCode();
       });
@@ -56,16 +56,27 @@ export function SourceCode(files: { [key: string]: string }) {
   }
 
   return ez('div').append(
-    ez('div').addStyles({
-      display: 'flex',
-    }).append(tabs),
-    contentHolder,
+    ez('div')
+      .addStyles({
+        display: 'flex'
+      })
+      .append(
+        ez('div')
+          .addStyles({
+            padding: '5px',
+            display: 'inline-block',
+            fontWeight: 'bold'
+          })
+          .setTextContent('Source'),
+        tabs
+      ),
+    contentHolder
   );
 }
 
 function prettyPrintCode() {
   setTimeout(() => {
     // Trigger the prettyprinting of pre tags using code-prettify
-    (window as any).PR.prettyPrint()
+    (window as any).PR.prettyPrint();
   }, 0);
 }
