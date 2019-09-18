@@ -13,6 +13,9 @@ install:
 script:
   - npm test
   - npm run coveralls
+before_deploy:
+  - cd examples
+  - npm run build
 deploy:
   local_dir: 'examples/dist'
   provider: pages
@@ -20,7 +23,5 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
-  script:
-    - (cd examples && npm run build)
   on:
     branch: master
