@@ -9,6 +9,17 @@
 
 If you find yourself writing a lot of `document.createElement` and dealing with the low-level built-in `HTMLElement` class then `ez-elements` can simplify a lot of the boilerplate code you're writing.
 
+## Install
+
+`npm install ez-elements --save`
+
+Alternatively, you can install just the parts of the package that you want:
+
+* `@ez-elements/core` contains `ez`, `EZElement`, `EZDiv` and `EZSpan`.
+* `@ez-elements/inputs` contains `EZTextInput` and `EZButton`.
+* `@ez-elements/jsx` contains `JSX`.
+* `@ez-elements/shadow` contains `EZShadowElement` and `extractStyleContents`.
+
 ## Getting Started
 
 As an example, lets look at using `document.createElement` directly to create a `div` with two `spans` inside that is then appended to `document.body`:
@@ -35,17 +46,6 @@ const someDiv = ez('div', 'some-div').append(
   spanTwo = ez('span', 'some-span').setTextContent('World'),
 ).appendTo(document.body);
 ```
-
-## Install
-
-`npm install ez-elements --save`
-
-Alternatively, you can install just the parts of the package that you want:
-
-* `@ez-elements/core` contains `ez`, `EZElement`, `EZDiv` and `EZSpan`.
-* `@ez-elements/inputs` contains `EZTextInput` and `EZButton`.
-* `@ez-elements/jsx` contains `JSX`.
-* `@ez-elements/shadow` contains `EZShadowElement` and `extractStyleContents`.
 
 ## Examples
 
