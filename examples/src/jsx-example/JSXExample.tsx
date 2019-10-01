@@ -1,4 +1,4 @@
-import * as EZJSX from 'ez-elements';
+import * as EZJSX from '@ez-elements/jsx';
 import { AnyEZElement, EZDiv, EZElement } from 'ez-elements';
 
 // "jsx": "react", in tsconfig.json means that JSX tags are transformed into

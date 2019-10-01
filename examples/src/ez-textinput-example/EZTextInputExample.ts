@@ -8,9 +8,7 @@ export function EZTextInputExample() {
     (textInput = new EZTextInput((newValue: string) => {
       statusElement.setTextContent(`Input value: ${newValue}`);
     })),
-
     (statusElement = ez('div')),
-
     ez('button')
       .setTextContent('Set to "Foo"')
       .onClick(() => {

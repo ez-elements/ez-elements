@@ -12,9 +12,6 @@ describe('ez-elements', () => {
     expect(whole.EZButton).toBeInstanceOf(Function);
     expect(whole.EZTextInput).toBeInstanceOf(Function);
 
-    // jsx
-    expect(whole.JSX).toBeInstanceOf(Function);
-
     // shadow
     expect(whole.extractStyleContents).toBeInstanceOf(Function);
     expect(whole.EZShadowElement).toBeInstanceOf(Function);

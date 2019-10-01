@@ -6,7 +6,6 @@ export function ButtonExample() {
 
   return ez('div').append(
     (statusElement = new StatusElement(false)),
-
     ez('button')
       .setTextContent('Enable')
       .onClick(() => {
