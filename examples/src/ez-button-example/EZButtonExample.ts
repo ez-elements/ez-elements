@@ -6,7 +6,6 @@ export function EZButtonExample() {
 
   return ez('div').append(
     (statusElement = new StatusElement(false)),
-
     new EZButton(() => {
       statusElement.enable();
     }).append(

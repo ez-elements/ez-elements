@@ -17,8 +17,8 @@ Alternatively, you can install just the parts of the package that you want:
 
 * `@ez-elements/core` contains `ez`, `EZElement`, `EZDiv` and `EZSpan`.
 * `@ez-elements/inputs` contains `EZTextInput` and `EZButton`.
-* `@ez-elements/jsx` contains `JSX`.
 * `@ez-elements/shadow` contains `EZShadowElement` and `extractStyleContents`.
+* `@ez-elements/jsx` contains `JSX` (and is not included in `ez-elements`).
 
 ## Getting Started
 

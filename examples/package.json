@@ -9,7 +9,8 @@
   "license": "Apache-2.0",
   "dependencies": {
     "code-prettify": "^0.1.0",
-    "ez-elements": "^0.0.4"
+    "ez-elements": "^0.0.5",
+    "@ez-elements/jsx": "^0.0.5"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.3",

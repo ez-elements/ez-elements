@@ -46,7 +46,6 @@ export class FilterableStaticList extends EZShadowElement<'div'> {
       (this.input = new EZTextInput(value => {
         this.applyFilter(value);
       }).addClass(textInputClassName)),
-
       ez('div').append(
         new EZButton(() => {
           this.input.setValue('1');
