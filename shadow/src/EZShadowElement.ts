@@ -65,7 +65,7 @@ if (!didRegisterCustomElement) {
   module.exports = {
     EZShadowElement: function() {
       throw new Error(
-        'customElements was not available so the custom element used by EZShadowElement cannot be constructed. This can occur if the environment does not support custom elements (either an old browser or a test environment that does not include support for custom elements'
+        'customElements was not available so the custom element used by EZShadowElement cannot be constructed. This can occur if the environment does not support custom elements (either an old browser or a test environment that does not include support for custom elements)'
       );
     }
   };
