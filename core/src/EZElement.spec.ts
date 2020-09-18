@@ -797,7 +797,7 @@ describe('EZElement', () => {
       expect(() => instance.setChildContainer(new EZDiv() as any)).toThrowError(
         expectedError
       );
-      expect(() => instance.setChildContainer(document)).toThrowError(
+      expect(() => instance.setChildContainer(document as any)).toThrowError(
         expectedError
       );
     });
