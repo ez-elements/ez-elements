@@ -11,7 +11,7 @@
     "bootstrap": "lerna bootstrap",
     "postbootstrap": "lerna run postbootstrap",
     "clean": "lerna clean --yes --private && lerna run clean",
-    "coveralls": "lerna run coveralls | coveralls"
+    "coveralls": "(lerna run coveralls && cat **/coverage/lcov.info) | coveralls"
   },
   "author": "Marcus Longmuir",
   "license": "Apache-2.0",
