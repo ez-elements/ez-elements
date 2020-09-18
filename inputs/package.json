@@ -1,6 +1,6 @@
 {
   "name": "@ez-elements/inputs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -19,7 +19,7 @@
     "@ez-elements/core": "^0.0.5"
   },
   "devDependencies": {
-    "@ez-elements/core": "^0.0.5"
+    "@ez-elements/core": "^0.0.6"
   },
   "gitHead": "65f90fac77403cb79d7f33656daa500ae0eb66b4"
 }
