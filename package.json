@@ -11,14 +11,14 @@
     "bootstrap": "lerna bootstrap",
     "postbootstrap": "lerna run postbootstrap",
     "clean": "lerna clean --yes --private && lerna run clean",
-    "coveralls": "lerna run coveralls && (cat **/coverage/lcov.info | coveralls)"
+    "coveralls": "lerna run coveralls && (cat **/coverage/lcov.info)"
   },
   "author": "Marcus Longmuir",
   "license": "Apache-2.0",
   "devDependencies": {
     "@types/jest": "^26.0.14",
     "coveralls": "^3.1.0",
-    "jest": "^25.1.0",
+    "jest": "^26.4.2",
     "lerna": "^3.22.1",
     "prettier": "2.1.2",
     "ts-jest": "^26.3.0",
