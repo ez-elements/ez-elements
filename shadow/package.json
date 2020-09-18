@@ -20,8 +20,8 @@
   },
   "devDependencies": {
     "@ez-elements/core": "^0.0.5",
-    "document-register-element": "^1.14.3",
-    "jest-environment-jsdom-fifteen": "^1.0.0"
+    "document-register-element": "^1.14.6",
+    "jest-environment-jsdom-fifteen": "^1.0.2"
   },
   "gitHead": "65f90fac77403cb79d7f33656daa500ae0eb66b4"
 }

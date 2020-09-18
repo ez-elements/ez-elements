@@ -13,7 +13,7 @@
     "@ez-elements/jsx": "^0.0.5"
   },
   "devDependencies": {
-    "parcel-bundler": "^1.12.3",
-    "typescript": "^3.6.2"
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^4.0.2"
   }
 }
