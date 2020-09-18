@@ -8,7 +8,7 @@
     "watch": "npm run build -- --watch",
     "test": "../node_modules/.bin/jest ./src --coverage",
     "test:watch": "npm run test -- --watch",
-    "coveralls": "../node_modules/.bin/jest ./src --coverage --coverageReporters=text-lcov"
+    "coveralls": "../node_modules/.bin/jest ./src --coverage && sed -i'' -e 's/SF:/SF:\\//g' coverage/lcov.info"
   },
   "author": "Marcus Longmuir",
   "license": "Apache-2.0",

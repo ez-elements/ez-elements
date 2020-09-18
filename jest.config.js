@@ -8,5 +8,9 @@ module.exports = {
             "lines": 100,
             "statements": 100
         }
-    }
+    },
+    "coverageReporters": [
+        ["lcov", {"projectRoot": "/"}],
+        "text-summary"
+    ],
 };
