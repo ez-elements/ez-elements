@@ -5,7 +5,7 @@
 [![npm version](https://badge.fury.io/js/ez-elements.svg)](https://www.npmjs.com/package/ez-elements)
 ![languages](https://img.shields.io/github/languages/top/ez-elements/ez-elements)
 
-`ez-elements` is a thin wrapper for the built-in `HTMLElement` class that aims to simplify writing imperative element creation and manipulation approachable in TypeScript.
+`ez-elements` is a thin wrapper for the built-in `HTMLElement` class that aims to simplify writing imperative element creation and manipulation in TypeScript.
 
 If you find yourself writing a lot of `document.createElement` and dealing with the low-level built-in `HTMLElement` class then `ez-elements` can simplify a lot of the boilerplate code you're writing.
 
