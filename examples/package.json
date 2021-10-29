@@ -8,13 +8,13 @@
   "author": "Marcus Longmuir",
   "license": "Apache-2.0",
   "dependencies": {
-    "@ez-elements/jsx": "^0.0.6",
+    "@ez-elements/jsx": "^0.0.7",
     "code-prettify": "^0.1.0",
-    "ez-elements": "^0.0.6"
+    "ez-elements": "^0.0.7"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.4",
-    "typescript": "^4.0.2"
+    "typescript": "^4.4.4"
   },
-  "version": "0.0.6"
+  "version": "0.0.7"
 }

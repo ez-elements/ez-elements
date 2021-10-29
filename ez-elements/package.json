@@ -1,6 +1,6 @@
 {
   "name": "ez-elements",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -13,9 +13,8 @@
   "author": "Marcus Longmuir",
   "license": "Apache-2.0",
   "dependencies": {
-    "@ez-elements/core": "^0.0.6",
-    "@ez-elements/inputs": "^0.0.6",
-    "@ez-elements/shadow": "^0.0.6"
+    "@ez-elements/core": "^0.0.7",
+    "@ez-elements/inputs": "^0.0.7"
   },
   "gitHead": "65f90fac77403cb79d7f33656daa500ae0eb66b4"
 }

@@ -11,9 +11,5 @@ describe('ez-elements', () => {
     // inputs
     expect(whole.EZButton).toBeInstanceOf(Function);
     expect(whole.EZTextInput).toBeInstanceOf(Function);
-
-    // shadow
-    expect(whole.extractStyleContents).toBeInstanceOf(Function);
-    expect(whole.EZShadowElement).toBeInstanceOf(Function);
   });
 });
