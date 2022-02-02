@@ -339,6 +339,19 @@ describe('EZElement', () => {
           instance.getNativeElement().classList.contains('bar')
         ).toBeTruthy();
       });
+
+      it('should add multiple space-separated classes', () => {
+        const instance = new EZElement('div');
+
+        expect(instance.addClass('foo bar')).toBe(instance);
+
+        expect(
+          instance.getNativeElement().classList.contains('foo')
+        ).toBeTruthy();
+        expect(
+          instance.getNativeElement().classList.contains('bar')
+        ).toBeTruthy();
+      });
     });
 
     describe('setClasses', () => {
@@ -377,7 +390,7 @@ describe('EZElement', () => {
     });
 
     describe('removeClass', () => {
-      it('should remove the specified attribute', () => {
+      it('should remove the specified classes', () => {
         const instance = new EZElement('div');
         instance.addClass('foo', 'bar');
         expect(
@@ -388,6 +401,26 @@ describe('EZElement', () => {
         ).toBeTruthy();
 
         expect(instance.removeClass('foo', 'bar')).toBe(instance);
+
+        expect(
+          instance.getNativeElement().classList.contains('foo')
+        ).toBeFalsy();
+        expect(
+          instance.getNativeElement().classList.contains('bar')
+        ).toBeFalsy();
+      });
+
+      it('should remove multiple space-separated classes', () => {
+        const instance = new EZElement('div');
+        instance.addClass('foo bar');
+        expect(
+          instance.getNativeElement().classList.contains('foo')
+        ).toBeTruthy();
+        expect(
+          instance.getNativeElement().classList.contains('bar')
+        ).toBeTruthy();
+
+        expect(instance.removeClass('foo bar')).toBe(instance);
 
         expect(
           instance.getNativeElement().classList.contains('foo')

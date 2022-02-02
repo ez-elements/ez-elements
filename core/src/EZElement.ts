@@ -222,7 +222,11 @@ export class EZElement<K extends NativeElement> {
 
   //region Classes
   public addClass(...classNames: Array<string>): this {
-    this.element.classList.add(...classNames);
+    const toAdd: Array<string> = [];
+    for (const className of classNames) {
+      toAdd.push(...className.split(" "));
+    }
+    this.element.classList.add(...toAdd);
     return this;
   }
 
@@ -238,7 +242,11 @@ export class EZElement<K extends NativeElement> {
   }
 
   public removeClass(...classNames: Array<string>): this {
-    this.element.classList.remove(...classNames);
+    const toRemove: Array<string> = [];
+    for (const className of classNames) {
+      toRemove.push(...className.split(" "));
+    }
+    this.element.classList.remove(...toRemove);
     return this;
   }
 
