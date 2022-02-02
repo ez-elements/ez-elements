@@ -1,6 +1,6 @@
 {
   "name": "@ez-elements/jsx",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -19,7 +19,7 @@
     "@ez-elements/core": "^0.1.0"
   },
   "devDependencies": {
-    "@ez-elements/core": "^0.1.0"
+    "@ez-elements/core": "^0.1.1"
   },
   "gitHead": "65f90fac77403cb79d7f33656daa500ae0eb66b4"
 }

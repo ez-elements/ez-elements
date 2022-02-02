@@ -1,6 +1,6 @@
 {
   "name": "@ez-elements/shadow",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
@@ -19,7 +19,7 @@
     "@ez-elements/core": "^0.1.0"
   },
   "devDependencies": {
-    "@ez-elements/core": "^0.1.0",
+    "@ez-elements/core": "^0.1.1",
     "document-register-element": "^1.14.6",
     "jest-environment-jsdom-fifteen": "^1.0.2"
   },
